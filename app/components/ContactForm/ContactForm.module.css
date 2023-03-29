@@ -1,0 +1,41 @@
+
+
+.Contact_form {
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 550px;
+    position: relative;
+}
+
+.Contact_form form {
+    margin: auto;
+    position: relative;
+    z-index: 100;
+}
+.Contact_form form div {
+    margin-bottom: 35px;
+}
+.Contact_form form select, .Contact_form form input {
+    background-color: #ffffffcc;
+}
+.Contact_form form select:focus {
+    background-color: #ffffff;
+}
+
+.Contact_form img {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    object-fit: cover;
+    margin-top: 22px;
+    filter: brightness(0);
+    scale: 1
+}
+
+

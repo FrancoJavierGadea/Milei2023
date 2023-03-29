@@ -6,6 +6,8 @@ import { MapContainer, Marker, Popup, TileLayer, GeoJSON } from 'react-leaflet';
 
 import Argentina from '../../assets/ProvinciasArgentinaB.json';
 
+import styles from "./ArgentinaMap.module.css";
+
 function ArgentinaMap({width = 500, height = 700}) {
 
     const router = useRouter();
@@ -109,7 +111,7 @@ function ArgentinaMap({width = 500, height = 700}) {
         });
     }
     
-    return (<div className='Map'>
+    return (<div className={styles.Map}>
 
         <MapContainer center={center} style={{width, height, background: 'transparent'}} {...mapOptions} ref={initMapRef}>
 

@@ -1,0 +1,26 @@
+
+
+.Redes {
+    padding: 20px;
+    background-color: #49479D;
+}
+.Redes div {
+    width: 50%;
+}
+
+
+.Redes a {
+    font-size: 28px;
+    color: white;
+}
+.Redes a:hover {
+    color: #ffd301;
+}
+
+
+@media (max-width: 768px) {
+
+    .Redes div {
+        width: 100%;
+    }
+}

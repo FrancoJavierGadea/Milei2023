@@ -1,0 +1,36 @@
+
+.Main {
+    background: url(/bg-2.png);
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-position-x: -100px;
+    background-color: black;
+    min-height: calc(100svh - 96px);
+}
+
+.Main section {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.Main section div {
+    width: 65%;
+    font-size: 18px;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+    .Main {
+        background-size: 70%;
+        background-position-x: center;
+    }
+    .Main section div  {
+        width: 100%;
+        padding-bottom: 30svh;
+        font-size: 16px;
+    }
+}

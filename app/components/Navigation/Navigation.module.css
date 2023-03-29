@@ -1,0 +1,26 @@
+
+
+.Path_title {
+    color: #b2b2b2;
+    font-family: Montserrat,sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+
+    .Path_title  {
+        width: 150px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+
+    .Path_title {
+        width: 280px;
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,95 @@
+.Main {
+
+    min-height: calc(100svh - 96px);
+}
+
+
+.Title {
+    margin-top: 50px;
+}
+.Title h2 {
+    color: #FFE500;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 0.9em;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 10px;
+    z-index: 100;
+    position: relative;
+}
+.Title div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: -220px;
+    z-index: 10;
+}
+.Title div img {
+    object-fit: scale-down;
+}
+
+
+
+.Text {
+    margin-top: 80px;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+.Image {
+    margin-top: 100px;
+}
+.Image div {
+    height: 620px;
+}
+.Image img {
+    object-fit: cover;
+}
+
+
+@media (max-width: 576px){
+
+    .Title {
+        margin-top: 100px; 
+    }
+    .Title h2 {
+        font-size: 20px;
+    }
+    .Title div {
+        margin-top: -200px;
+    }
+
+    .Text {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    .Image {
+        margin-top: 30px;
+    }
+
+    .Image div {
+        height: 300px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+
+    .Title {
+        margin-top: 70px; 
+    }
+    .Title h2 {
+        font-size: 35px;
+    }
+    .Title div {
+        margin-top: -200px;
+    }
+
+    .Image div {
+        height: 400px;
+    }
+}

@@ -1,13 +1,30 @@
+import Image from "next/image";
+import ContactSection from "../components/ContactSection/ContactSection";
+import ImageCarousel from "../components/ImageCarousel/ImageCarousel";
 
+const images = [
+    { src: '/tucuman-1.jpg', alt: 'Javier Milei en Plaza Alberdi - Tucuman' }, 
+    { src: '/tucuman-2.jpg', alt: 'Javier Milei en Plaza Alberdi - Tucuman' },
+    { src: '/tucuman-3.jpg', alt: 'Javier Milei en Plaza Alberdi - Tucuman' } 
+];
 
 function EntreRios() {
 
 
-    return (<>
+    return (<main>
     
-        <h1 className="text-light">Entre Rios</h1>
-        
-    </>);
+        <section className="container">
+            
+            <ImageCarousel images={images}/>
+
+        </section>
+
+        <ContactSection className="container" provincia="Entre Rios" />
+
+        <section className="position-relative my-4" style={{height: 250}}>
+            <Image src="/milei-2023.png" fill alt="milei-2023" style={{objectFit: 'scale-down'}}/>
+        </section>
+    </main>);
 }
 
 export default EntreRios;
